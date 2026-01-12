@@ -12,3 +12,4 @@ tom_bonus = [200,500,400]
 
 bonus = np.array([jeff_bonus, nick_bonus, tom_bonus])
 
+salary

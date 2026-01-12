@@ -14,3 +14,4 @@ bonus = np.array([jeff_bonus, nick_bonus, tom_bonus])
 
 salary_bonus = base_salary + bonus
 
+print(base_salary+ "\n")

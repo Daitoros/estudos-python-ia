@@ -23,4 +23,5 @@ print("\n")
 print("Salário Total:")
 print(salary_bonus)
 
-maiorSal3mes
+maiorSal3mes = np.amax(salary_bonus, axis = 1)
+

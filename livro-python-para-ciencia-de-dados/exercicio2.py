@@ -26,7 +26,9 @@ print(salary_bonus)
 maiorSal3mes = np.amax(salary_bonus, axis = 1)
 maiorSalCol = np.amax(salary_bonus, axis = 0)
 
-maiorSal = np.amax(np.concatenate(maiorSalCol, maiorSal3mes))
+conjuntoMaior = np.concatenate(maiorSal3mes, maiorSalCol)
+
+maiorSal = np.amax(conjuntoMaior, axis=1)
 
 
 

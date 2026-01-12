@@ -20,7 +20,9 @@ print("\n\n")
 print("Bônus:\n")
 print(bonus) 
 print("\n\n")
-print("Salário Total:" + salary_bonus + "\n\n")
+print("Salário Total:")
+print(salary_bonus)
+print("\n\n")
 
 
 

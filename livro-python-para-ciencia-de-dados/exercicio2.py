@@ -16,8 +16,10 @@ salary_bonus = base_salary + bonus
 
 print("\nSalário Base:\n")
 print(base_salary)
+print("\n")
 print("Bônus:\n")
 print(bonus) 
+print("\n")
 print("Salário Total:")
 print(salary_bonus)
 

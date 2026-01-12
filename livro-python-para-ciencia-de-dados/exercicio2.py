@@ -6,4 +6,5 @@ tom_salary = [2300,2500,2500]
 
 base_salary =  np.array([jeff_salary, nick_salary, tom_salary])
 
-jeff
+jeff_bonus = [500,400,400]
+nick_bonus = [600]

@@ -33,6 +33,6 @@ maiorSal = np.amax(salary_bonus)                                        #Encontr
 medianaSal = np.median(salary_bonus)
 mediaSal= np.average(salary_bonus)
 
-print("\n" + maiorSal)
+print(maiorSal)
 print(medianaSal)
 print(mediaSal)

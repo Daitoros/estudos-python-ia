@@ -27,7 +27,7 @@ maiorSal3mes = np.amax(salary_bonus, axis = 1)
 maiorSalCol = np.amax(salary_bonus, axis = 0)
 
 #conjuntoMaior = np.concatenate((maiorSal3mes, maiorSalCol))            não é necessário concatenar aqui
-maiorSal = np.amax(conjuntoMaior, axis=1)
+#maiorSal = np.amax(conjuntoMaior, axis=1)
 
 
 

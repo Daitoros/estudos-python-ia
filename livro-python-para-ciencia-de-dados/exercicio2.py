@@ -30,7 +30,7 @@ maiorSalCol = np.amax(salary_bonus, axis = 0)
 #maiorSal = np.amax(conjuntoMaior, axis=1)
 
 maiorSal = np.amax(salary_bonus)                                        #Encontrando o maior valor de todos
-medianaSal = np.median(salary_bonus)                    
+medianaSal = np.median(salary_bonus)                 
 mediaSal= np.average(salary_bonus)
 print("\n")
 print(maiorSal)
@@ -38,3 +38,4 @@ print(medianaSal)
 print(mediaSal)
 
 
+mediaMaioresSal = np.average(maiorSal3mes)

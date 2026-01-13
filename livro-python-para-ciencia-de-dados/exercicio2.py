@@ -20,7 +20,7 @@ print("\n")
 print("Bônus:\n")
 print(bonus) 
 print("\n")
-print("Salário Total:"
+print("Salário Total:")
 print(salary_bonus)
                                                                 #Aqui é como uma verdadeira matriz: eixo 0 representa a linha e eixo 1 representa a coluna!!
 maiorSalFunc = np.amax(salary_bonus, axis = 1)                  #(axis = 1) Percorre e compara por linha (cada funcionario está em uma linha). no final vai ter um total de valores equivalente ao total de linhas

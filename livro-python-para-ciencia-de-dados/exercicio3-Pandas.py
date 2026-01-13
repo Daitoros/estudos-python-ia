@@ -12,3 +12,11 @@ emails = pd.Series(data, name = 'emails')
 df = pd.concat([nomes,emails], axis = 1)
 print("\n")
 print(df)
+
+data = ['2555-01','2555-02', '2555-03']
+phones = pd.Series(data, name = 'telefones')
+
+df = pd.concat([nomes,emails,phones], axis = 1)
+print("\n")
+print(df)
+

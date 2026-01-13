@@ -23,8 +23,8 @@ print("\n")
 print("Salário Total:")
 print(salary_bonus)
 
-maiorSalFunc = np.amax(salary_bonus, axis = 1)                  #Percorre e compara por linha (cada funcionario está em uma linha)
-maiorSalmes = np.amax(salary_bonus, axis = 0)
+maiorSalFunc = np.amax(salary_bonus, axis = 1)                  #(axis = 1) Percorre e compara por linha (cada funcionario está em uma linha). no final vai ter um total de valores equivalente ao total de linhas
+maiorSalmes = np.amax(salary_bonus, axis = 0)                   #(axis = 0) Percorre e compara por coluna ()
 
 #conjuntoMaior = np.concatenate((maiorSal3mes, maiorSalCol))            não é necessário concatenar aqui
 #maiorSal = np.amax(conjuntoMaior, axis=1)

@@ -23,8 +23,8 @@ print("\n")
 print("Salário Total:")
 print(salary_bonus)
 
-maiorSal3mes = np.amax(salary_bonus, axis = 1)
-maiorSalCol = np.amax(salary_bonus, axis = 0)
+maiorSalFunc = np.amax(salary_bonus, axis = 1)
+maiorSalmes = np.amax(salary_bonus, axis = 0)
 
 #conjuntoMaior = np.concatenate((maiorSal3mes, maiorSalCol))            não é necessário concatenar aqui
 #maiorSal = np.amax(conjuntoMaior, axis=1)
@@ -38,7 +38,7 @@ print(medianaSal)
 print(mediaSal)
 
 print("\n Maiores salários dos últimos 3 meses:")
-print(maiorSal3mes)
+print(maiorSalmes)
 print("\n Média maiores salários dos últimos 3 meses")
-mediaMaioresSal = np.average(maiorSal3mes)
+mediaMaioresSal = np.average(maiorSalmes)
 print(mediaMaioresSal)

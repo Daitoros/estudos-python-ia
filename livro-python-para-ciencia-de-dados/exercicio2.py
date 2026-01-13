@@ -23,7 +23,7 @@ print("\n")
 print("Salário Total:")
 print(salary_bonus)
 
-maiorSalFunc = np.amax(salary_bonus, axis = 1)
+maiorSalFunc = np.amax(salary_bonus, axis = 1)                  #Por coluna:
 maiorSalmes = np.amax(salary_bonus, axis = 0)
 
 #conjuntoMaior = np.concatenate((maiorSal3mes, maiorSalCol))            não é necessário concatenar aqui

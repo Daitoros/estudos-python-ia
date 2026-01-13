@@ -20,21 +20,25 @@ print("\n")
 print("Bônus:\n")
 print(bonus) 
 print("\n")
-print("Salário Total:")
+print("Salário Total:"
 print(salary_bonus)
-
-maiorSal3mes = np.amax(salary_bonus, axis = 1)
-maiorSalCol = np.amax(salary_bonus, axis = 0)
+                                                                #Aqui é como uma verdadeira matriz: eixo 0 representa a linha e eixo 1 representa a coluna!!
+maiorSalFunc = np.amax(salary_bonus, axis = 1)                  #(axis = 1) Percorre e compara por linha (cada funcionario está em uma linha). no final vai ter um total de valores equivalente ao total de linhas
+maiorSalmes = np.amax(salary_bonus, axis = 0)                   #(axis = 0) Percorre e compara por coluna (os meses estão representados por colunas). no final vai ter um total de valores equivalente ao total de colunas
 
 #conjuntoMaior = np.concatenate((maiorSal3mes, maiorSalCol))            não é necessário concatenar aqui
 #maiorSal = np.amax(conjuntoMaior, axis=1)
 
 maiorSal = np.amax(salary_bonus)                                        #Encontrando o maior valor de todos
-medianaSal = np.median(salary_bonus)                    
+medianaSal = np.median(salary_bonus)                 
 mediaSal= np.average(salary_bonus)
 print("\n")
 print(maiorSal)
 print(medianaSal)
 print(mediaSal)
 
-
+print("\n Maiores salários dos últimos 3 meses:")
+print(maiorSalmes)
+print("\n Média maiores salários dos últimos 3 meses")
+mediaMaioresSal = np.average(maiorSalmes)
+print(mediaMaioresSal)

@@ -37,5 +37,8 @@ print(maiorSal)
 print(medianaSal)
 print(mediaSal)
 
-
+print("\n Maiores salários dos últimos 3 meses:")
+print(maiorSal3mes)
+print("\n Média maiores salários dos últimos 3 meses")
 mediaMaioresSal = np.average(maiorSal3mes)
+print(mediaMaioresSal)

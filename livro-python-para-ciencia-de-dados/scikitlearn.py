@@ -32,3 +32,25 @@ print("Accuracy:", accuracy)
 new_reviews = ['Old version of python useless', 'Very good effort, but not five stars', 'Clear and concise']
 X_new = vectorizer.transform(new_reviews)
 print(classifier.predict(X_new))
+
+
+#Adicionando para a visualização do dicionário e dos pesos que o computador cria para aprendizado
+
+import numpy as np
+
+# 1. Pegar a lista de todas as palavras (o vocabulário)
+palavras = vectorizer.get_feature_names_out()
+
+# 2. Pegar os pesos (coeficientes) que o modelo atribuiu a cada palavra
+pesos = classifier.coef_[0]
+
+# 3. Criar uma tabela simples para visualizar
+tabela_pesos = pd.DataFrame({'Palavra': palavras, 'Peso': pesos})
+
+# 4. Mostrar as 5 palavras mais "Positivas"
+print("\n--- Palavras mais Positivas ---")
+print(tabela_pesos.sort_values(by='Peso', ascending=False).head(5))
+
+# 5. Mostrar as 5 palavras mais "Negativas"
+print("\n--- Palavras mais Negativas ---")
+print(tabela_pesos.sort_values(by='Peso', ascending=True).head(5))

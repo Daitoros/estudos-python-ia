@@ -26,3 +26,9 @@ classifier.fit(X_train, sentiment_train)
 
 accuracy = classifier.score(X_test, sentiment_test)
 print("Accuracy:", accuracy)
+
+#Testando predição com novos dados
+
+new_reviews = ['Old version of python useless', 'Very good effort, but not five stars', 'Clear and concise']
+X_new = vectorizer.transform(new_reviews)
+print(classifier.predict(X_new))

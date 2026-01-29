@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv('C:/Users/davix/Desktop/Arquivos/Profissional/Estudos/Análise de dados/amazon_cells_labelled.txt', names=['review', 'sentiment'], sep='\t')
+df = pd.read_csv('C:/Users/davix/Desktop/Arquivos/Profissional/Estudos/Análise de dados/Base de dados/amazon_cells_labelled.txt', names=['review', 'sentiment'], sep='\t')
 
 #Dividindo conjunto em amostra e em teste
 from sklearn.model_selection import train_test_split 
